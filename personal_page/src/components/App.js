@@ -3,10 +3,10 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { createMuiTheme, MuiThemeProvider, withStyles} from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-//import Sidenav from './Sidenav';
+import Sidenav from './Sidenav';
 import Home from './Home';
-//import Team from './Team';
-//import Devices from './Devices';
+import Projects from './Projects';
+import Skills from './Skills';
 import Error from './Error';
 //mport Gallery from './Gallery'
 //import * as Constants from '../helpers/constants';
@@ -31,11 +31,13 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-          main:'#332d4f',
-          dark:'#242038'
+          main:'#0F2038',
+          //dark:'#242038'
+          dark:'#0F2038',
         },
         secondary: {
-         main: '#21ef8b'
+          //main: '#21ef8b'
+         main: '#74d600'
         },
         error: {
           main: '#21ef8b'
@@ -44,10 +46,12 @@ const theme = createMuiTheme({
         tonalOffset: 0.2,
         type: 'dark',
           background:{
-            paper:'#332d4f',
-            default:'#242038'
-          },
-          action:{
+            //paper:'#332d4f',
+              paper:'#0F2038',
+              //default:'#242038'
+              default:'#0F2038'
+          },  
+          action:{  
             active: "rgba(33,239,139, 0.54)",
             hover: "rgba(33,239,139, 0.08)",
             hoverOpacity: 0.08,
@@ -56,7 +60,7 @@ const theme = createMuiTheme({
             disabledBackground: "rgba(33,239,139, 0.12)",
   
           },
-          divider:'#242038',
+          divider:'#332d4f',
           ripple: {
             color: '#21ef8b',
           },
@@ -75,6 +79,10 @@ const theme = createMuiTheme({
   });
 
 class App extends Component {
+
+  componentDidMount(){
+    document.title = "David Romero - Personal WebSite "
+  }
   render() {
     const { classes } = this.props;
     return (
@@ -83,15 +91,13 @@ class App extends Component {
       <div className="App">
       <CssBaseline />
       <div className={classes.root}>
-      <div>
-    {
-      //<Sidenav />
-    }
-      </div>
+      <Sidenav />
       <main className={classes.content}>
       <div className={classes.toolbar} />
       <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact path='/projects' component={Projects} />
+      <Route exact path='/skills' component={Skills} />
       <div >
     {
       //<Route exact path='/About' component={About} />
