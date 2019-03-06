@@ -1,2 +1,3 @@
 # Personal Websiste
-Static Personal Website, using nodejs with material UI, www.davidromero.xyz
+Static Personal Website, using ReactJS with material UI, www.davidromero.xyz
+
