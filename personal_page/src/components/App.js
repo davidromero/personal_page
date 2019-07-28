@@ -8,7 +8,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Skills from './Skills';
 import Error from './Error';
-//mport Gallery from './Gallery'
+//import Gallery from './Gallery'
 //import * as Constants from '../helpers/constants';
 //import Analytics from 'react-router-ga';
 
@@ -37,10 +37,13 @@ const theme = createMuiTheme({
         },
         secondary: {
           //main: '#21ef8b'
-         main: '#74d600'
+          //este si
+         //main: '#74d600'
+         main: '#62c200'
         },
         error: {
-          main: '#21ef8b'
+          //main: '#21ef8b'
+          main: '#acc5e9'
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,

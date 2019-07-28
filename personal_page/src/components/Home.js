@@ -7,10 +7,31 @@ import CloudDownloadTwoTone from '@material-ui/icons/CloudDownloadTwoTone';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   root: {
       flex: '1 0 100%',
+    },
+  root2: {
+      flexGrow: 1,
+    },
+  paper2: {
+      padding: theme.spacing.unit * 1,
+      flex: '0 0 auto',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      color: theme.palette.text.secondary,
+    },
+  card: {
+      maxWidth: 345,
+    },
+  media: {
+      height: 0,
+      display: 'block',
+      margin: 'auto',
+      paddingTop: '56.25%', // 16:9
     },
   hero: {
     flex: '0 0 auto',
@@ -39,7 +60,7 @@ const styles = theme => ({
     whiteSpace: 'nowrap',
   },
   button: {
-      marginTop: theme.spacing.unit * 3,
+      marginTop: theme.spacing.unit * 1,
     },
   headline: {
     paddingLeft: theme.spacing.unit * 3,
@@ -52,10 +73,8 @@ const styles = theme => ({
     },
   },
   content: {
-    paddingBottom: theme.spacing.unit * 8,
-    paddingTop: theme.spacing.unit * 8,
     [theme.breakpoints.up('sm')]: {
-      paddingTop: theme.spacing.unit * 12,
+      paddingTop: theme.spacing.unit * 3,
     },
   },
   logo: {
@@ -77,10 +96,10 @@ class Home extends Component {
     const { classes } = this.props;
     return (
         <div className={classes.root}>
-        <Paper className={classes.root} elevation={15}>
+        <Paper className={classes.root} elevation={24}>
         <div className={classes.hero}>
         <div className={classes.content}>
-          <div className={classes.text}>
+          <div>
             <Typography
               variant="h3"
               align="center"
@@ -94,30 +113,33 @@ class Home extends Component {
             </div>
         </div>
         </div>
-            <div className={classes.text}>
+
+        </Paper>
+        <div className={classes.text}>
           <List className={classes.text}>
             <ListItem>
             <Typography
               variant="h4"
               component="h3"
-              color="textSecondary"
+              color="error"
+              align="left"
               gutterBottom
-              className={classes.headline}
+              className={classes.content}
             >
-              {"Passionate about solving daily problems with new technologies"}
+              {"Hi, I'm David. I like to solve daily problems using new Technologies. I like testing new stuff as well."}
             </Typography>
             </ListItem>
             </List>
           </div>
-          <div className={classes.text}>
-          <Button variant="contained" color="primary" className={classes.button} size="medium" href={"https://google.com"}>
-        Download CV 
+          <div className={classes.button}>
+          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://cvdavidromero.s3.us-east-2.amazonaws.com/cv_aws_DavidRomero.pdf"}>
+          Download CV
         <CloudDownloadTwoTone className={classes.rightIcon} />
       </Button>
           </div>
-        </Paper>
         <div>
-        <Paper className={classes.root} elevation={10}>
+
+        <Paper className={classes.root} elevation={24}>
         <Typography
               variant="h3"
               align="center"
@@ -130,8 +152,52 @@ class Home extends Component {
             </Typography>
         </Paper>
         </div>
+
+      <div className={classes.root2}>
+      <Grid justify="space-between" alignItems="center" container spacing={2}>
+        <Grid item xs>
+          <Paper className={classes.paper2}>
+            <img src={require('../images/AWS_Essentials.png')} alt="AWS_Essentials" style={{
+          display: 'block',
+          width: '90%',
+          margin: 'auto',
+        }}/>
+          </Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper2}>
+            <img src={require('../images/LPI_Linux_Essentials.png')} alt="LPI_Linux_Essentials" style={{
+          display: 'block',
+          width: '90%',
+          margin: 'auto',
+        }}/>
+          </Paper>
+        </Grid>
+      </Grid>
+      <Grid justify="space-between" alignItems="center" container spacing={2}>
+        <Grid item xs>
+          <Paper className={classes.paper2}>
+            <img src={require('../images/FullStack_Serverless_AWS.png')} alt="FullStack_Serverless_AWS" style={{
+          display: 'block',
+          width: '90%',
+          margin: 'auto',
+        }}/>
+          </Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper2}>
+            <img src={require('../images/DevOps_Essentials.png')} alt="DevOps_Essentials" style={{
+          display: 'block',
+          width: '90%',
+          margin: 'auto',
+        }}/>
+          </Paper>
+        </Grid>
+      </Grid>
+    </div>
         <div>
-        <Paper className={classes.root} elevation={10}>
+          
+        <Paper className={classes.root} elevation={24}>
         <Typography
               variant="h3"
               align="center"
@@ -145,7 +211,7 @@ class Home extends Component {
         </Paper>
         </div>
         <div>
-        <Paper className={classes.root} elevation={10}>
+        <Paper className={classes.root} elevation={24}>
         <Typography
               variant="h3"
               align="center"

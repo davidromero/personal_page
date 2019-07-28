@@ -18,13 +18,12 @@ class Error extends Component {
     return (
       <div className={classes.root}>
       <div>
-    {
+
+      <img src={require('../images/notfound.png')} height="150px" width="150px" alt="404" style={{
+        display: 'block',
+        margin: 'auto',
+      }}/>
       
-      //<img src={require('../images/notfound.png')} height="150px" width="150px" alt="404" style={{
-        //display: 'block',
-        //margin: 'auto',
-      //}}/>
-      }
       </div>
       <div className={classes.root}>
       <Typography variant="h5" component="h1" align='center' >

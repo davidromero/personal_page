@@ -7,6 +7,14 @@ const styles = theme => ({
     root: {
         flex: '1 0 100%',
       },
+    card: {
+        maxWidth: 600,
+      },
+    media: {
+        height: 400,
+        width: 600,
+        paddingTop: '56.25%', // 16:9
+      },
     hero: {
       flex: '0 0 auto',
       display: 'flex',
@@ -98,7 +106,6 @@ class Projects extends Component {
           </div>
         </div>
         </div>
-
         </div>
     );
   }
