@@ -137,8 +137,36 @@ class Home extends Component {
         <CloudDownloadTwoTone className={classes.rightIcon} />
       </Button>
           </div>
+          <div>
+          
+          <Paper className={classes.root} elevation={24}>
+          <Typography
+                variant="h3"
+                align="center"
+                component="h2"
+                color="textPrimary"
+                gutterBottom
+                className={classes.title}
+              >
+                {"Interest"}
+              </Typography>
+          </Paper>
+          </div>
+          <div>
+          <Paper className={classes.root} elevation={24}>
+          <Typography
+                variant="h3"
+                align="center"
+                component="h2"
+                color="textPrimary"
+                gutterBottom
+                className={classes.title}
+              >
+                {"Contact"}
+              </Typography>
+          </Paper>
+          </div>
         <div>
-
         <Paper className={classes.root} elevation={24}>
         <Typography
               variant="h3"
@@ -195,35 +223,6 @@ class Home extends Component {
         </Grid>
       </Grid>
     </div>
-        <div>
-          
-        <Paper className={classes.root} elevation={24}>
-        <Typography
-              variant="h3"
-              align="center"
-              component="h2"
-              color="textPrimary"
-              gutterBottom
-              className={classes.title}
-            >
-              {"Interest"}
-            </Typography>
-        </Paper>
-        </div>
-        <div>
-        <Paper className={classes.root} elevation={24}>
-        <Typography
-              variant="h3"
-              align="center"
-              component="h2"
-              color="textPrimary"
-              gutterBottom
-              className={classes.title}
-            >
-              {"Contact"}
-            </Typography>
-        </Paper>
-        </div>
         </div>
     );
   }

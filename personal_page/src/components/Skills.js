@@ -5,7 +5,10 @@ import { Typography}from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import FrameworkIcon from '@material-ui/icons/DashboardTwoTone';
+import DatabaseIcon from '@material-ui/icons/AssignmentTwoTone';
+import LanguageIcon from '@material-ui/icons/LanguageTwoTone';
 
 const styles = theme => ({
     root: {
@@ -41,11 +44,10 @@ const styles = theme => ({
         marginTop: theme.spacing.unit * 3,
       },
     headline: {
-      paddingLeft: theme.spacing.unit * 3,
-      paddingRight: theme.spacing.unit * 3,
+      paddingLeft: theme.spacing.unit * 2,
+      paddingRight: theme.spacing.unit * 2,
       marginTop: theme.spacing.unit,
-      maxWidth: 500,
-      textAlign: 'left',
+      textAlign: 'center',
       [theme.breakpoints.only('xs')]: {
         fontSize: 20,
       },
@@ -76,7 +78,7 @@ class Skills extends Component {
     const { classes } = this.props;
     return (
         <div className={classes.root}>
-        <Paper className={classes.root} elevation={15}>
+        <Paper className={classes.root} elevation={24}>
         <div className={classes.hero}>
         <div className={classes.content}>
           <div className={classes.text}>
@@ -96,7 +98,10 @@ class Skills extends Component {
         </div>
         <div className={classes.text}>
           <List className={classes.text}>
-            <ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <LanguageIcon />
+              </ListItemIcon>
             <Typography
               variant="h4"
               component="h3"
@@ -113,10 +118,14 @@ class Skills extends Component {
               gutterBottom
               className={classes.headline}
             >
-              {"Java  Python  Javascript  Scala"}
+              {"Python    Java    C#/C++    SQL   Javascript"}
             </Typography>
             </ListItem>
-            <ListItem>
+            <Paper className={classes.root} elevation={1}>
+            <ListItem button>
+              <ListItemIcon>
+                <FrameworkIcon />
+              </ListItemIcon>
             <Typography
               variant="h4"
               component="h3"
@@ -132,12 +141,18 @@ class Skills extends Component {
               component="h3"
               color="secondary"
               gutterBottom
+              
               className={classes.headline}
             >
-              {"bla bla bla"}
+              {".Net    React   NumPy"}
             </Typography>
             </ListItem>
-            <ListItem>
+            </Paper>
+            <Paper className={classes.root} elevation={1}>
+            <ListItem button>
+              <ListItemIcon>
+                <DatabaseIcon />
+              </ListItemIcon>
             <Typography
               variant="h4"
               component="h3"
@@ -148,7 +163,18 @@ class Skills extends Component {
             >
               {"Databases:"}
             </Typography>
+            <Typography
+              variant="h4"
+              component="h3"
+              color="secondary"
+              gutterBottom
+              className={classes.headline}
+            >
+              {"MySQL    Oracle    MongoDB   Redis    DynamoDB"}
+            </Typography>
             </ListItem>
+            </Paper>
+            <Paper className={classes.root} elevation={1}>
             <ListItem>
             <Typography
               variant="h4"
@@ -167,9 +193,10 @@ class Skills extends Component {
               gutterBottom
               className={classes.headline}
             >
-              {"Github  Docker"}
+              {"AWS Cloud Git Docker Bash PowerShell Excel"}
             </Typography>
             </ListItem>
+            </Paper>
             </List>
           </div>
         </Paper>
