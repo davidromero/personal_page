@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography}from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import ReceiptIcon from '@material-ui/icons/ReceiptTwoTone';
 
 const styles = theme => ({
     root: {
@@ -9,6 +15,17 @@ const styles = theme => ({
       },
     card: {
         maxWidth: 600,
+      },
+      paper2: {
+        padding: theme.spacing.unit * 1,
+        flex: '0 0 auto',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: theme.palette.text.secondary,
+      },
+      root2: {
+        flexGrow: 1,
       },
     media: {
         height: 400,
@@ -23,10 +40,11 @@ const styles = theme => ({
       color: theme.palette.text.secondary
     },
     text: {
-      paddingTop: theme.spacing.unit * 2,
+      //paddingTop: theme.spacing.unit * 2,
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
+      textAlign: 'left',
+      alignItems: 'left',
       justifyContent: 'center',
     },
     title: {
@@ -42,11 +60,12 @@ const styles = theme => ({
       whiteSpace: 'nowrap',
     },
     button: {
-        marginTop: theme.spacing.unit * 3,
+        marginTop: theme.spacing.unit * 1,
+        display: 'auto',
       },
     headline: {
-      paddingLeft: theme.spacing.unit * 4,
-      paddingRight: theme.spacing.unit * 4,
+      paddingLeft: theme.spacing.unit * 2,
+      paddingRight: theme.spacing.unit * 2,
       marginTop: theme.spacing.unit,
       maxWidth: 500,
       textAlign: 'center',
@@ -55,10 +74,10 @@ const styles = theme => ({
       },
     },
     content: {
-      paddingBottom: theme.spacing.unit * 8,
-      paddingTop: theme.spacing.unit * 8,
+      paddingBottom: theme.spacing.unit * 4,
+      paddingTop: theme.spacing.unit * 4,
       [theme.breakpoints.up('sm')]: {
-        paddingTop: theme.spacing.unit * 12,
+        paddingTop: theme.spacing.unit * 6,
       },
     },
     logo: {
@@ -81,31 +100,146 @@ class Projects extends Component {
         <div className={classes.root}>
         <div className={classes.hero}>
         <div className={classes.content}>
-          <div className={classes.text}>
             <Typography
-              variant="h3"
+              variant="h4"
               align="center"
               component="h2"
               color="textPrimary"
               gutterBottom
               className={classes.title}
             >
-              {'What can I do?'}
+              {'Personal Projects'}
             </Typography>
+        </div>
+        </div>
+        <div>
+          <Paper className={classes.root2} elevation={24}>
+          <Typography
+                variant="h5"
+                align="left"
+                textAlign="left"
+                component="h2"
+                color="textPrimary"
+                gutterBottom
+                className={classes.text}
+              >
+                {"CRUD Web App"}
+            </Typography>
+            <div className={classes.button}>
+          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"http://autoai.davidromero.xyz/#/"}>
+          Live Demo
+        <ReceiptIcon className={classes.rightIcon} />
+      </Button>
+          </div>
+            <div className={classes.button}>
+          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/CRUDapp"}>
+          View Code
+        <ReceiptIcon className={classes.rightIcon} />
+      </Button>
+          </div>
+          </Paper>
+
+          <List className={classes.text}>
+            <ListItem>
             <Typography
-              variant="h4"
+              variant="h6"
               component="h3"
-              color="textSecondary"
+              color="error"
+              align="left"
               gutterBottom
-              className={classes.headline}
+              className={classes.content}
             >
-              {"Lists of personal Projects"}
+              {"Este es un proyecto de bla bla bla"}
+            </Typography>
+            </ListItem>
+            </List>
+            <Grid direction="column" justify="space-space-evenly" alignItems="center">
+              <Grid item xs>
+                <Paper className={classes.paper2}>
+                  <img src={require('../images/CRUD1.png')} alt="CRUD Web 1" style={{
+                    display: 'block',
+                    width: '100%',
+                    margin: 'auto',
+                  }}/>
+                </Paper>
+              </Grid>
+              <Grid item xs>
+                <Paper className={classes.paper2}>
+                  <img src={require('../images/CRUD2.png')} alt="CRUD Web 1" style={{
+                    display: 'block',
+                    width: '100%',
+                    margin: 'auto',
+                  }}/>
+                </Paper>
+              </Grid>
+            </Grid>
+            <Typography
+              variant="h6"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {" "}
             </Typography>
           </div>
-          <div className={classes.text}>
+          <div>
+          <Paper className={classes.root2} elevation={24}>
+          <Typography
+                variant="h5"
+                align="left"
+                textAlign="left"
+                component="h2"
+                color="textPrimary"
+                gutterBottom
+                className={classes.text}
+              >
+                {"Bag of Words - Naive Bayes"}
+            </Typography>
+            <div className={classes.button}>
+          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/Bag_of_Words"}>
+          View Code
+        <ReceiptIcon className={classes.rightIcon} />
+      </Button>
           </div>
-        </div>
-        </div>
+          </Paper>
+
+          <List className={classes.text}>
+            <ListItem>
+            <Typography
+              variant="h6"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"Este es un proyecto de bla2 bla2 bla2"}
+            </Typography>
+            </ListItem>
+            </List>
+            <Grid direction="column" justify="space-space-evenly" alignItems="center">
+              <Grid item xs>
+                <Paper className={classes.paper2}>
+                  <img src={require('../images/bag_of_words1.png')} alt="CRUD Web 1" style={{
+                    display: 'block',
+                    width: '100%',
+                    margin: 'auto',
+                  }}/>
+                </Paper>
+              </Grid>
+              <Grid item xs>
+                <Paper className={classes.paper2}>
+                  <img src={require('../images/bag_of_words2.png')} alt="CRUD Web 1" style={{
+                    display: 'block',
+                    width: '100%',
+                    margin: 'auto',
+                  }}/>
+                </Paper>
+              </Grid>
+            </Grid>
+          </div>
         </div>
     );
   }

@@ -7,6 +7,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import MusicNoteIcon from '@material-ui/icons/MusicNoteOutlined';
 //import Collapse from '@material-ui/core/Collapse';
 //import ExpandLess from '@material-ui/icons/ExpandLess';
 //import ExpandMore from '@material-ui/icons/ExpandMore';
@@ -81,7 +82,6 @@ class Sidenav extends React.Component {
      }));
   };
 
-
   render() {
     const { classes } = this.props;
 
@@ -119,12 +119,20 @@ class Sidenav extends React.Component {
           <ListItemText disableTypography primary={<Typography variant="h5">Projects</Typography>} key='projects' />
           </ListItem>
           </Link>
-          <a href={"https://www.google.com"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
-          <ListItem button key='blog' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
+          <a href={"https://github.com/davidromero"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
+          <ListItem button key='Github' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
             <LocalLibraryOutlined className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">Blog</Typography>} key='blog' />
+          <ListItemText disableTypography primary={<Typography variant="h5">Github</Typography>} key='github' />
+          </ListItem>
+          </a>
+          <a href={"https://soundcloud.com/d-14r"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
+          <ListItem button key='my music' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
+          <ListItemIcon>
+            <MusicNoteIcon className={classes.icon} />
+          </ListItemIcon>
+          <ListItemText disableTypography primary={<Typography variant="h5">My Music</Typography>} key='my music' />
           </ListItem>
           </a>
           </List>

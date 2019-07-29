@@ -101,7 +101,7 @@ class Home extends Component {
         <div className={classes.content}>
           <div>
             <Typography
-              variant="h3"
+              variant="h4"
               align="center"
               component="h2"
               color="textPrimary"
@@ -119,14 +119,26 @@ class Home extends Component {
           <List className={classes.text}>
             <ListItem>
             <Typography
-              variant="h4"
+              variant="body1"
               component="h3"
               color="error"
               align="left"
               gutterBottom
               className={classes.content}
             >
-              {"Hi, I'm David. I like to solve daily problems using new Technologies. I like testing new stuff as well."}
+              {"I am David, a easy going guy from Guatemala. I am passionate about everything related to technology, more recent Cloud-Based Technologies."}
+            </Typography>
+            </ListItem>
+            <ListItem>
+            <Typography
+              variant="body1"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"I belive that creativity, enthusiasm and knowledge surrounding technology are the elementes that make this industry thrive."}
             </Typography>
             </ListItem>
             </List>
@@ -141,7 +153,7 @@ class Home extends Component {
           
           <Paper className={classes.root} elevation={24}>
           <Typography
-                variant="h3"
+                variant="h4"
                 align="center"
                 component="h2"
                 color="textPrimary"
@@ -155,7 +167,7 @@ class Home extends Component {
           <div>
           <Paper className={classes.root} elevation={24}>
           <Typography
-                variant="h3"
+                variant="h4"
                 align="center"
                 component="h2"
                 color="textPrimary"
@@ -163,13 +175,39 @@ class Home extends Component {
                 className={classes.title}
               >
                 {"Contact"}
-              </Typography>
+            </Typography>
           </Paper>
+          <List className={classes.text}>
+            <ListItem>
+            <Typography
+              variant="h6"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"E-mail: d-romero@live.com"}
+            </Typography>
+            </ListItem>
+            <ListItem>
+            <Typography
+              variant="h6"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"Telegram: +(502) 40303202"}
+            </Typography>
+            </ListItem>
+            </List>
           </div>
         <div>
         <Paper className={classes.root} elevation={24}>
         <Typography
-              variant="h3"
+              variant="h4"
               align="center"
               component="h2"
               color="textPrimary"

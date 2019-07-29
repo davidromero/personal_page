@@ -43,7 +43,7 @@ const theme = createMuiTheme({
         },
         error: {
           //main: '#21ef8b'
-          main: '#acc5e9'
+          main: '#bbd0ed'
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,

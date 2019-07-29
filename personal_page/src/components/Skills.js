@@ -9,6 +9,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import FrameworkIcon from '@material-ui/icons/DashboardTwoTone';
 import DatabaseIcon from '@material-ui/icons/AssignmentTwoTone';
 import LanguageIcon from '@material-ui/icons/LanguageTwoTone';
+import VariousIcon from '@material-ui/icons/CloudTwoTone';
 
 const styles = theme => ({
     root: {
@@ -83,7 +84,7 @@ class Skills extends Component {
         <div className={classes.content}>
           <div className={classes.text}>
             <Typography
-              variant="h3"
+              variant="h4"
               align="center"
               component="h2"
               color="textPrimary"
@@ -103,7 +104,7 @@ class Skills extends Component {
                 <LanguageIcon />
               </ListItemIcon>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               color="textSecondary"
               gutterBottom
@@ -112,7 +113,7 @@ class Skills extends Component {
               {"Programming Languages:"}
             </Typography>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               color="secondary"
               gutterBottom
@@ -127,7 +128,7 @@ class Skills extends Component {
                 <FrameworkIcon />
               </ListItemIcon>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               align="left"
               color="textSecondary"
@@ -137,7 +138,7 @@ class Skills extends Component {
               {"Frameworks:"}
             </Typography>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               color="secondary"
               gutterBottom
@@ -154,7 +155,7 @@ class Skills extends Component {
                 <DatabaseIcon />
               </ListItemIcon>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               align="left"
               color="textSecondary"
@@ -164,7 +165,7 @@ class Skills extends Component {
               {"Databases:"}
             </Typography>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               color="secondary"
               gutterBottom
@@ -175,9 +176,12 @@ class Skills extends Component {
             </ListItem>
             </Paper>
             <Paper className={classes.root} elevation={1}>
-            <ListItem>
+            <ListItem button>
+            <ListItemIcon>
+                <VariousIcon />
+              </ListItemIcon>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               align="left"
               color="textSecondary"
@@ -187,7 +191,7 @@ class Skills extends Component {
               {"Various:"}
             </Typography>
             <Typography
-              variant="h4"
+              variant="h5"
               component="h3"
               color="secondary"
               gutterBottom
