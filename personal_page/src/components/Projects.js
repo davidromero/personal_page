@@ -123,16 +123,16 @@ class Projects extends Component {
                 gutterBottom
                 className={classes.text}
               >
-                {"CRUD Web App"}
+                {"[React] CRUD Web App"}
             </Typography>
             <div className={classes.button}>
-          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"http://autoai.davidromero.xyz/#/"}>
+          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="large" href={"http://autoai.davidromero.xyz/#/"}>
           Live Demo
         <ReceiptIcon className={classes.rightIcon} />
       </Button>
           </div>
             <div className={classes.button}>
-          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/CRUDapp"}>
+          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/CRUDapp"}>
           View Code
         <ReceiptIcon className={classes.rightIcon} />
       </Button>
@@ -149,7 +149,7 @@ class Projects extends Component {
               gutterBottom
               className={classes.content}
             >
-              {"Este es un proyecto de bla bla bla"}
+              {"Basic funcionalities project, Create, Read, Update and Delete. Using react as frontend and ExpressJS as backend."}
             </Typography>
             </ListItem>
             </List>
@@ -195,10 +195,10 @@ class Projects extends Component {
                 gutterBottom
                 className={classes.text}
               >
-                {"Bag of Words - Naive Bayes"}
+                {"[Java] Bag of Words - Naive Bayes"}
             </Typography>
             <div className={classes.button}>
-          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/Bag_of_Words"}>
+          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="large" href={"https://github.com/davidromero/Bag_of_Words"}>
           View Code
         <ReceiptIcon className={classes.rightIcon} />
       </Button>
@@ -215,7 +215,7 @@ class Projects extends Component {
               gutterBottom
               className={classes.content}
             >
-              {"Este es un proyecto de bla2 bla2 bla2"}
+              {"Bag of words classification project using a Naive Bayes probabilistic model. The program takes a text file to train itself, counting every word associated with the tag and it calculates the probability of an outcome given a word."}
             </Typography>
             </ListItem>
             </List>

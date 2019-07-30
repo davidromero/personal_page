@@ -126,7 +126,7 @@ class Home extends Component {
               gutterBottom
               className={classes.content}
             >
-              {"I am David, a easy going guy from Guatemala. I am passionate about everything related to technology, more recent Cloud-Based Technologies."}
+              {"I am David, a easy going guy from Guatemala. I am a software engineer (not yet!), I studied at Universidad Rafael Landívar. I am passionate about everything related to technology, more recent Cloud-Based Technologies."}
             </Typography>
             </ListItem>
             <ListItem>
@@ -138,13 +138,13 @@ class Home extends Component {
               gutterBottom
               className={classes.content}
             >
-              {"I belive that creativity, enthusiasm and knowledge surrounding technology are the elementes that make this industry thrive."}
+              {"I belive that creativity, enthusiasm and knowledge surrounding technology are the elementes that make this industry thrive. I am strict and committed when it comes to professional roles but I also enjoy my own time, you could find me at the pool the weekends or in a local music event."}
             </Typography>
             </ListItem>
             </List>
           </div>
           <div className={classes.button}>
-          <Button variant="outlined" color="secondary" className={classes.button} size="large" href={"https://cvdavidromero.s3.us-east-2.amazonaws.com/cv_aws_DavidRomero.pdf"}>
+          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="large" href={"https://cvdavidromero.s3.us-east-2.amazonaws.com/cv_aws_DavidRomero.pdf"}>
           Download CV
         <CloudDownloadTwoTone className={classes.rightIcon} />
       </Button>
@@ -163,6 +163,36 @@ class Home extends Component {
                 {"Interest"}
               </Typography>
           </Paper>
+          <List className={classes.text}>
+            <ListItem>
+            <Typography
+              variant="body1"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"I am part of a local Artificial Intelligence Group, we share books and give talks, we are always learning. Join Us on Telegram!"}
+            </Typography>
+            </ListItem>
+            <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="small" href={"https://t.me/iaguate"}>
+                Join the Telegram Channel Here
+              <CloudDownloadTwoTone className={classes.rightIcon} />
+            </Button>
+            <ListItem>
+            <Typography
+              variant="body1"
+              component="h3"
+              color="error"
+              align="left"
+              gutterBottom
+              className={classes.content}
+            >
+              {"I like to design sounds and make experimental music, check the sidebar for my SoundCloud link. In a near future I would like to start a personal project called 'Recuerdos Sonoros de una Guatemala Cambiante' where I record the always changing sounds of my beautiful Guatemala."}
+            </Typography>
+            </ListItem>
+            </List>
           </div>
           <div>
           <Paper className={classes.root} elevation={24}>
@@ -180,7 +210,7 @@ class Home extends Component {
           <List className={classes.text}>
             <ListItem>
             <Typography
-              variant="h6"
+              variant="body1"
               component="h3"
               color="error"
               align="left"
@@ -192,7 +222,7 @@ class Home extends Component {
             </ListItem>
             <ListItem>
             <Typography
-              variant="h6"
+              variant="body1"
               component="h3"
               color="error"
               align="left"
