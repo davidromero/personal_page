@@ -31,7 +31,8 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-          main:'#0F2038',
+          main:'#464f61',
+          //main:'#0F2038',
           //dark:'#242038'
           dark:'#0F2038',
         },
@@ -39,7 +40,8 @@ const theme = createMuiTheme({
           //main: '#21ef8b'
           //este si
          //main: '#74d600'
-         main: '#62c200'
+         //main: '#62c200'
+         main: '#000000'
         },
         error: {
           //main: '#21ef8b'
@@ -50,9 +52,11 @@ const theme = createMuiTheme({
         type: 'dark',
           background:{
             //paper:'#332d4f',
-              paper:'#0F2038',
+            paper:'#464f61',
+              //paper:'#0F2038',
               //default:'#242038'
-              default:'#0F2038'
+              //default:'#0F2038'
+              default:'#464f61'
           },  
           action:{  
             active: "rgba(33,239,139, 0.54)",

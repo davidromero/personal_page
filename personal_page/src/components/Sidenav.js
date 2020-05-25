@@ -7,7 +7,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MusicNoteIcon from '@material-ui/icons/MusicNoteOutlined';
 //import Collapse from '@material-ui/core/Collapse';
 //import ExpandLess from '@material-ui/icons/ExpandLess';
 //import ExpandMore from '@material-ui/icons/ExpandMore';
@@ -16,7 +15,7 @@ import Divider from '@material-ui/core/Divider';
 import MyAppbar from './MyAppbar';
 import Footer from './Footer';
 import {Link} from 'react-router-dom';
-import { HomeOutlined, BuildOutlined, FolderTwoTone, LocalLibraryOutlined } from '@material-ui/icons/';
+import { Home, Build, Folder, LocalLibrary, MusicNote } from '@material-ui/icons/';
 import Typography from '@material-ui/core/Typography';
 //import androidVersions from '../helpers/androidVersions.json';
 
@@ -98,7 +97,7 @@ class Sidenav extends React.Component {
           <Link to={"/"} className={classes.link} onClick={this.handleDrawerToggle}>
           <ListItem button key='home' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
-            <HomeOutlined className={classes.icon} />
+            <Home className={classes.icon} />
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography variant="h5">About</Typography>} key='about' />
           </ListItem>
@@ -106,7 +105,7 @@ class Sidenav extends React.Component {
           <Link to={"/skills"} className={classes.link} onClick={this.handleDrawerToggle}>
           <ListItem button key='skills' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
-            <BuildOutlined className={classes.icon} />
+            <Build className={classes.icon} />
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography variant="h5">Skills</Typography>} key='skills'/>
           </ListItem>
@@ -114,7 +113,7 @@ class Sidenav extends React.Component {
           <Link to={"/projects"} className={classes.link} onClick={this.handleDrawerToggle}>
           <ListItem button key='projects' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
-            <FolderTwoTone className={classes.icon} />
+            <Folder className={classes.icon} />
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography variant="h5">Projects</Typography>} key='projects' />
           </ListItem>
@@ -122,7 +121,7 @@ class Sidenav extends React.Component {
           <a href={"https://github.com/davidromero"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
           <ListItem button key='Github' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
-            <LocalLibraryOutlined className={classes.icon} />
+            <LocalLibrary className={classes.icon} />
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography variant="h5">Github</Typography>} key='github' />
           </ListItem>
@@ -130,7 +129,7 @@ class Sidenav extends React.Component {
           <a href={"https://soundcloud.com/d-14r"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
           <ListItem button key='my music' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
-            <MusicNoteIcon className={classes.icon} />
+            <MusicNote className={classes.icon} />
           </ListItemIcon>
           <ListItemText disableTypography primary={<Typography variant="h5">My Music</Typography>} key='my music' />
           </ListItem>
