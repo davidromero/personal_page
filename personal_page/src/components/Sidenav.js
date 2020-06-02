@@ -19,7 +19,7 @@ import { Home, Build, Folder, LocalLibrary, MusicNote } from '@material-ui/icons
 import Typography from '@material-ui/core/Typography';
 //import androidVersions from '../helpers/androidVersions.json';
 
-const drawerWidth = 200;
+const drawerWidth = 175;
 
 const styles = theme => ({
   drawer: {
@@ -88,7 +88,6 @@ class Sidenav extends React.Component {
       <div>
         <div  className={classes.toolbar}>
         <Link className={classes.title} to="/" onClick={this.handleDrawerToggle}>
-          <Typography variant="h5" className={classes.title} component="h3" align="center">David Romero</Typography>
       </Link>
         </div>
         <Divider />
@@ -99,15 +98,16 @@ class Sidenav extends React.Component {
           <ListItemIcon>
             <Home className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">About</Typography>} key='about' />
+          <ListItemText disableTypography primary={<Typography variant="h5" color="secondary">About</Typography>} key='about' />
           </ListItem>
           </Link>
+          <Divider variant="middle" />
           <Link to={"/skills"} className={classes.link} onClick={this.handleDrawerToggle}>
           <ListItem button key='skills' TouchRippleProps={{ classes: { root: classes.buttonRipple }}} >
           <ListItemIcon>
             <Build className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">Skills</Typography>} key='skills'/>
+          <ListItemText disableTypography primary={<Typography variant="h5" color="secondary">Skills</Typography>} key='skills'/>
           </ListItem>
           </Link>
           <Link to={"/projects"} className={classes.link} onClick={this.handleDrawerToggle}>
@@ -115,7 +115,7 @@ class Sidenav extends React.Component {
           <ListItemIcon>
             <Folder className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">Projects</Typography>} key='projects' />
+          <ListItemText disableTypography primary={<Typography variant="h5" color="secondary">Projects</Typography>} key='projects' />
           </ListItem>
           </Link>
           <a href={"https://github.com/davidromero"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
@@ -123,7 +123,7 @@ class Sidenav extends React.Component {
           <ListItemIcon>
             <LocalLibrary className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">Github</Typography>} key='github' />
+          <ListItemText disableTypography primary={<Typography variant="h5" color="secondary">Github</Typography>} key='github' />
           </ListItem>
           </a>
           <a href={"https://soundcloud.com/d-14r"} target="_blank" rel="noopener noreferrer"  className={classes.link}>
@@ -131,7 +131,7 @@ class Sidenav extends React.Component {
           <ListItemIcon>
             <MusicNote className={classes.icon} />
           </ListItemIcon>
-          <ListItemText disableTypography primary={<Typography variant="h5">My Music</Typography>} key='my music' />
+          <ListItemText disableTypography primary={<Typography variant="h5" color="secondary">My Music</Typography>} key='my music' />
           </ListItem>
           </a>
           </List>

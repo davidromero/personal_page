@@ -22,6 +22,9 @@ const styles = theme => ({
       alignItems: 'center',
       color: theme.palette.text.secondary
     },
+    icon: {
+      color: theme.palette.secondary.main
+    },
     text: {
       //paddingTop: theme.spacing.unit * 2,
       display: 'flex',
@@ -87,7 +90,7 @@ class Skills extends Component {
               variant="h4"
               align="center"
               component="h2"
-              color="textPrimary"
+              color="secondary"
               gutterBottom
               className={classes.title}
             >
@@ -101,12 +104,12 @@ class Skills extends Component {
           <List className={classes.text}>
             <ListItem button>
               <ListItemIcon>
-                <LanguageIcon />
+                <LanguageIcon className={classes.icon} />
               </ListItemIcon>
             <Typography
               variant="h5"
               component="h3"
-              color="textSecondary"
+              color="secondary"
               gutterBottom
               className={classes.headline}
             >
@@ -119,19 +122,19 @@ class Skills extends Component {
               gutterBottom
               className={classes.headline}
             >
-              {"Python    Java    C#/C++    SQL   Javascript"}
+              {"Java, Bash, Javascript, Python "}
             </Typography>
             </ListItem>
             <Paper className={classes.root} elevation={1}>
             <ListItem button>
               <ListItemIcon>
-                <FrameworkIcon />
+                <FrameworkIcon className={classes.icon} />
               </ListItemIcon>
             <Typography
               variant="h5"
               component="h3"
               align="left"
-              color="textSecondary"
+              color="secondary"
               gutterBottom
               className={classes.headline}
             >
@@ -145,20 +148,20 @@ class Skills extends Component {
               
               className={classes.headline}
             >
-              {".Net    React   NumPy"}
+              {"JavaEE React"}
             </Typography>
             </ListItem>
             </Paper>
             <Paper className={classes.root} elevation={1}>
             <ListItem button>
               <ListItemIcon>
-                <DatabaseIcon />
+                <DatabaseIcon className={classes.icon} />
               </ListItemIcon>
             <Typography
               variant="h5"
               component="h3"
               align="left"
-              color="textSecondary"
+              color="secondary"
               gutterBottom
               className={classes.headline}
             >
@@ -171,20 +174,20 @@ class Skills extends Component {
               gutterBottom
               className={classes.headline}
             >
-              {"MySQL    Oracle    MongoDB   Redis    DynamoDB"}
+              {"MySQL, Oracle, MongoDB, DynamoDB"}
             </Typography>
             </ListItem>
             </Paper>
             <Paper className={classes.root} elevation={1}>
             <ListItem button>
             <ListItemIcon>
-                <VariousIcon />
+                <VariousIcon className={classes.icon} />
               </ListItemIcon>
             <Typography
               variant="h5"
               component="h3"
               align="left"
-              color="textSecondary"
+              color="secondary"
               gutterBottom
               className={classes.headline}
             >
@@ -197,7 +200,7 @@ class Skills extends Component {
               gutterBottom
               className={classes.headline}
             >
-              {"AWS Cloud Git Docker Bash PowerShell Excel"}
+              {"AWS, Google Cloud Platform, Git, Docker, Bash,  Excel"}
             </Typography>
             </ListItem>
             </Paper>

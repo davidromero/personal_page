@@ -104,7 +104,7 @@ class Projects extends Component {
               variant="h4"
               align="center"
               component="h2"
-              color="textPrimary"
+              color="secondary"
               gutterBottom
               className={classes.title}
             >
@@ -119,7 +119,7 @@ class Projects extends Component {
                 align="left"
                 textAlign="left"
                 component="h2"
-                color="textPrimary"
+                color="secondary"
                 gutterBottom
                 className={classes.text}
               >
@@ -144,7 +144,7 @@ class Projects extends Component {
             <Typography
               variant="h6"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}

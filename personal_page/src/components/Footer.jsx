@@ -35,7 +35,7 @@ class Footer extends Component {
       <div>
       <div className={classes.footerCredits}>
       <Typography
-      color="textPrimary"
+      color="secondary"
       variant="h5"
       >
       {'Built with '}
@@ -43,7 +43,7 @@ class Footer extends Component {
         ❤️
       </span>
       {' by '}
-      <a className={classes.link} color="textPrimary" href="https://github.com/davidromero/personal_page">
+      <a className={classes.link} color="secondary" href="https://github.com/davidromero/personal_page">
         David Romero
       </a>
     </Typography>

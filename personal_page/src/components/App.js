@@ -31,7 +31,8 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-          main:'#464f61',
+          main:'#FFFFFF',
+         // main:'#464f61',
           //main:'#0F2038',
           //dark:'#242038'
           dark:'#0F2038',
@@ -45,18 +46,18 @@ const theme = createMuiTheme({
         },
         error: {
           //main: '#21ef8b'
-          main: '#bbd0ed'
+          main: '#cc0000'
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,
         type: 'dark',
           background:{
             //paper:'#332d4f',
-            paper:'#464f61',
+            paper:'#FFFFFF',
               //paper:'#0F2038',
-              //default:'#242038'
+              //default:'#242038'F
               //default:'#0F2038'
-              default:'#464f61'
+              default:'#FFFFF',
           },  
           action:{  
             active: "rgba(33,239,139, 0.54)",
@@ -67,9 +68,9 @@ const theme = createMuiTheme({
             disabledBackground: "rgba(33,239,139, 0.12)",
   
           },
-          divider:'#332d4f',
+          divider:'#FFFFFF',
           ripple: {
-            color: '#21ef8b',
+            color: '#FFFFFF',
           },
     },
   });

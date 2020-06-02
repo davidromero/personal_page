@@ -75,6 +75,8 @@ const styles = theme => ({
   content: {
     [theme.breakpoints.up('sm')]: {
       paddingTop: theme.spacing.unit * 3,
+      paddingLeft: theme.spacing.unit * 3,
+      paddingRight: theme.spacing.unit * 3,
     },
   },
   logo: {
@@ -96,111 +98,89 @@ class Home extends Component {
     const { classes } = this.props;
     return (
         <div className={classes.root}>
-        <Paper className={classes.root} elevation={24}>
-        <div className={classes.hero}>
-        <div className={classes.content}>
+        <Paper className={classes.root} elevation={2} square={false} variant="outlined">
           <div>
             <Typography
               variant="h4"
               align="center"
               component="h2"
-              color="textPrimary"
+              color="secondary"
               gutterBottom
               className={classes.title}
             >
               {'About'}
             </Typography>
             </div>
-        </div>
-        </div>
-
         </Paper>
-        <div className={classes.text}>
-          <List className={classes.text}>
-            <ListItem>
-            <Typography
-              variant="body1"
+          <div>
+          <Typography
+              variant="subtitle1"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}
             >
-              {"I am David, a easy going guy from Guatemala. I am a software engineer (not yet!), I studied at Universidad Rafael Landívar. I am passionate about everything related to technology, more recent Cloud-Based Technologies."}
+              {"Welcome, I enoy making Software and music, check out my projects."}
             </Typography>
-            </ListItem>
-            <ListItem>
             <Typography
-              variant="body1"
+              variant="h6"
               component="h3"
               color="error"
-              align="left"
+              align="right"
               gutterBottom
               className={classes.content}
             >
-              {"I belive that creativity, enthusiasm and knowledge surrounding technology are the elementes that make this industry thrive. I am strict and committed when it comes to professional roles but I also enjoy my own time, you could find me at the pool the weekends or in a local music event."}
+              {"\"Small is beatiful\""}
             </Typography>
-            </ListItem>
-            </List>
-          </div>
-          <div className={classes.button}>
-          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="large" href={"https://cvdavidromero.s3.us-east-2.amazonaws.com/cv_aws_DavidRomero.pdf"}>
+          <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="small" href={"https://cvdavidromero.s3.us-east-2.amazonaws.com/cv_aws_DavidRomero.pdf"}>
           Download CV
         <CloudDownloadTwoTone className={classes.rightIcon} />
       </Button>
-          </div>
-          <div>
-          
-          <Paper className={classes.root} elevation={24}>
+          <Paper className={classes.root} elevation={2} square={false} variant="outlined">
           <Typography
                 variant="h4"
                 align="center"
                 component="h2"
-                color="textPrimary"
+                color="secondary"
                 gutterBottom
                 className={classes.title}
               >
                 {"Interest"}
               </Typography>
           </Paper>
-          <List className={classes.text}>
-            <ListItem>
             <Typography
-              variant="body1"
+              variant="subtitle1"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}
             >
               {"I am part of a local Artificial Intelligence Group, we share books and give talks, we are always learning. Join Us on Telegram!"}
             </Typography>
-            </ListItem>
             <Button target="_blank" variant="outlined" color="secondary" className={classes.button} size="small" href={"https://t.me/iaguate"}>
                 Join the Telegram Channel Here
               <CloudDownloadTwoTone className={classes.rightIcon} />
             </Button>
-            <ListItem>
             <Typography
-              variant="body1"
+              variant="subtitle1"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}
             >
               {"I like to design sounds and make experimental music, check the sidebar for my SoundCloud link. In a near future I would like to start a personal project called 'Recuerdos Sonoros de una Guatemala Cambiante' where I record the always changing sounds of my beautiful Guatemala."}
             </Typography>
-            </ListItem>
-            </List>
           </div>
           <div>
-          <Paper className={classes.root} elevation={24}>
+          <Paper className={classes.root} elevation={2} square={false} variant="outlined">
           <Typography
                 variant="h4"
                 align="center"
                 component="h2"
-                color="textPrimary"
+                color="secondary"
                 gutterBottom
                 className={classes.title}
               >
@@ -210,9 +190,9 @@ class Home extends Component {
           <List className={classes.text}>
             <ListItem>
             <Typography
-              variant="body1"
+              variant="subtitle1"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}
@@ -222,9 +202,9 @@ class Home extends Component {
             </ListItem>
             <ListItem>
             <Typography
-              variant="body1"
+              variant="subtitle1"
               component="h3"
-              color="error"
+              color="secondary"
               align="left"
               gutterBottom
               className={classes.content}
@@ -235,12 +215,12 @@ class Home extends Component {
             </List>
           </div>
         <div>
-        <Paper className={classes.root} elevation={24}>
+        <Paper className={classes.root} elevation={2} square={false} variant="outlined">
         <Typography
               variant="h4"
               align="center"
               component="h2"
-              color="textPrimary"
+              color="secondary"
               gutterBottom
               className={classes.title}
             >
